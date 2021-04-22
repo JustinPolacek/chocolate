@@ -178,6 +178,8 @@ html{
     align-items: center;
     justify-content: center;
     background: #220109;
+    overflow-y: hidden;
+
 }
 
 .menu ul{
@@ -624,7 +626,10 @@ footer{
 
 
 
-
+      .footer-2 p span{
+        color: black;
+      
+      }
 
 
 
