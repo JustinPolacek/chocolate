@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   
     
     <title>Chocolate</title>
@@ -12,17 +14,17 @@
 
     <section class="showcase">
         <header>
-            <a href="index.html"> <h2 class="logo">Fabrice <span> Gillote </span></h2> </a>
+            <a data-aos="fade-left"href="index.html"> <h2 class="logo">Fabrice <span> Gillote </span></h2> </a>
             <div class="toggle"></div>
         </header>
 
         <img src="/img/coffrets-de-chocolats.jpg"></img>
         <div class="overlay"></div>
         <div class="text">
-            <h2>Fabrice Gillote</h2>
-            <h3>Patisserie & Chocolate</h3>
+            <h2 data-aos="fade-down">Fabrice Gillote</h2>
+            <h3 data-aos="fade-up">Patisserie & Chocolate</h3>
             <p></p>
-            <a href="#">About Us</a>
+            <a data-aos="fade-left" href="#">About Us</a>
         </div>
     </section>
 
@@ -41,20 +43,20 @@
 
        <section class="fabrice">
          <div class="about-fab">
-           <h1 class="meet-h1">Patisserie &  <span>Chocolate Master</h1> </span>
+           <h1 data-aos="fade-up" class="meet-h1">Patisserie &  <span>Chocolate Master</h1> </span>
          </div>
-         <div class="image">
-         <img src="/img/Fabrice Gillotte_HD2.png">
-         <div class="fabrice-info">
-           <h1 class="fab-h1"> Fabrice <span> Gillote</span> </h1>
-           <h3 class="fab-3">World Renowed French <span> Chocolate Artist</h3> </span>
+         <div  class="image">
+         <img data-aos="fade-down" src="/img/Fabrice Gillotte_HD2.png">
+         <div  class="fabrice-info">
+           <h1 data-aos="fade-left"class="fab-h1"> Fabrice <span> Gillote</span> </h1>
+           <h3 data-aos="fade-right" class="fab-3">World Renowed French <span> Chocolate Artist</h3> </span>
            
-           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum magnam,<br> fuga debitis laborum
+           <p data-aos="fade-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum magnam,<br> fuga debitis laborum
               acere est porro, error numquam sunt reprehenderit <br> veniam nisi praesentium?</p>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores <br> placeat necessitatibus nulla quos itaque facilis?</p>
+              <p  data-aos="fade-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores <br> placeat necessitatibus nulla quos itaque facilis?</p>
                <br>
                <br>
-                 <h3> <span>Les Distinctions</h3> </span>
+                 <h3 data-aos="fade-left"> <span>Les Distinctions</h3> </span>
                  <p class="awards">
                   <span>MEILLEUR OUVRIER DE FRANCE CHOCOLATIER </span> - CONFISEUR 1991 <br>
                    <span> INCONTOURNABLE DU CHOCOLAT FRANÇAIS </span> 2017 - 2016 - 2015  <br>
@@ -70,40 +72,34 @@
 
        <!------SEMI FOOTER AND ICONS -------->
 
-       <section class="ikons">
+       <section data-aos="fade-up" class="ikons">
          <div class="icon-info">
-           <h1> <span class="sp1">MEILLEUR </span> <span class="sp3" >OUVRIER</span>  <span class="sp2">DE FRANCE</h1> 
+           <h1 data-aos="fade-left" > <span class="sp1">MEILLEUR </span> <span class="sp3" >OUVRIER</span>  <span class="sp2">DE FRANCE</h1> 
            
          </div>
 
         <div class="icon-box">
           <div class="icon-1 box">
             <img src="img/xicone_expedition.png.pagespeed.ic.Td0aGyuq5J.webp">
-            <div class="p-box">
+            
               <h4>DES INGRÉDIENTS D'EXCEPTION </h4>
               <p>Message personnalisé et <br> calages de protection</p>
-            </div>
+            
           </div>
           <div class="icon-1 box">
             <img src="/img/xicone_livraison.png.pagespeed.ic._oCurTwilj.webp">
-            <div class="p-box">
               <h4>LIVRAISON OFFERTE </h4>
               <p>Message personnalisé et <br> calages de protection</p>
-            </div>
           </div>
           <div class="icon-1 box">
             <img src="img/xicone_paiement.png.pagespeed.ic.3jYsKMd2ii.webp">
-            <div class="p-box">
               <h4>PAIEMENT EN LIGNE SÉCURISÉ </h4>
               <p>Message personnalisé et <br> calages de protection</p>
-            </div>
           </div>
           <div class="icon-1 box">
             <img src="img/xicone_tablette.png.pagespeed.ic.AwgO2_jgVQ.webp">
-            <div class="p-box">
               <h4>EXPÉDITION SOIGNÉE </h4>
               <p>Message personnalisé et <br> calages de protection</p>
-            </div>
           </div>
 
         </div>
@@ -116,7 +112,7 @@
 
 
 
-           <footer>
+           <footer data-aos="fade-in">
             <div class="contact">
               <h6>contact us</h6>
               <p class="one">Hi, we are always open for cooperation and suggestions,<br> contact us in one of the ways below</p>
@@ -183,6 +179,15 @@
               <a href=""><i class="fab fa-cc-mastercard" style="font-size:20px;"></i></a>
             </div>  
           </div>
+
+          <!--------AOS AND JAVASCRIPT -->
+
+
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({offset:200, duration: 1300,
+    });
+  </script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
         <script src="about.js"></script>
 </body>

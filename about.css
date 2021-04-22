@@ -142,7 +142,7 @@ html{
     margin-top: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: 0.5s;
+    transition: all 1s ease-in-out;
 }
 
 .text a:hover{
@@ -221,11 +221,13 @@ html{
     cursor: pointer;
     background:  #220109;
     color: white;
-    transition: all 1s ease;
+    transition: all 1s ease-in-out;
 }
 
 .btn button:hover{
     letter-spacing: 8px;
+    transition: all 1s ease;
+
     
 }
 
@@ -254,8 +256,50 @@ html{
   justify-content: space-between;
   margin-top: 200px;
   margin-right: 200px;
-
 }
+
+@media  (max-width: 654px){
+  .image img{
+    width: 400px;
+    height: 450px;
+  }
+  .about-fab{
+   font-size: 2rem;
+   line-height: 55px;
+   margin-left: 20px;
+       
+  }
+  .image{
+    display: flex;
+    margin-left: 20px;
+  }
+  .icon-info{
+    margin-left: 20px;
+  }
+  
+}
+@media  (max-width: 1511px){
+  .image img{
+    width: 400px;
+    height: 450px;
+  }
+  .about-fab{
+   font-size: 2rem;
+   line-height: 55px;
+   margin-left: 20px;
+       
+  }
+  .image{
+    display: flex;
+    margin-left: 20px;
+  }
+  .icon-info{
+    margin-left: 20px;
+  }
+  
+}
+
+
 
 img{
   height: 800px;
@@ -281,9 +325,7 @@ span{
 /* SEMI FOOTER ICONS */
 
 
-.ikons{
 
-}
 
 .sp1{
   color: blue;
@@ -310,9 +352,10 @@ span{
 }
 .icon-box{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  text-align: center;
  
 }
 
@@ -320,13 +363,23 @@ span{
   width: 50px;
   height: 50px;
   object-fit: contain;
-  margin-left: 50px;
+}
+
+@media(max-width: 440px){
+ .icon-1 .box {
+ display: flex;
+justify-content: flex-start;
+text-align: center;
+align-items: center;
+}
+
+.icon-info{
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 
-
-
-
+}
 
 
 

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   
     
     <title>Chocolate</title>
@@ -12,17 +14,17 @@
 
     <section class="showcase">
         <header>
-         <a href="index.html"> <h2 class="logo">Fabrice <span> Gillote </span></h2>  </a>
+         <a data-aos="fade-in" href="index.html"> <h2 class="logo">Fabrice <span> Gillote </span></h2>  </a>
                     <div class="toggle"></div>
         </header>
 
         <video src="/videoplayback (2).mp4" muted loop autoplay></video>
         <div class="overlay"></div>
-        <div class="text">
-            <h2>Never Stop</h2>
-            <h3>Exploring Chocolate</h3>
+        <div  class="text">
+          <h2 data-aos="fade-down">Adventures</h2>
+            <h3 data-aos="fade-up">In Chocolate</h3>
             <p></p>
-            <a href="#">Explore</a>
+            <a data-aos="fade-left" href="#shop">Explore</a>
         </div>
     </section>
 
@@ -37,8 +39,8 @@
             </ul>
         </div>
 
-<div class="shop" id="shop">
-            <div class="box"> 
+<div  class="shop" id="shop">
+            <div data-aos="fade-up"  class="box"> 
             <div class="box-1">
                 <img src="/img/gallery-4.jpg">
                 <h1 class="info">macaron boxes</h1>
@@ -61,7 +63,7 @@
                 </div>
             </div>
             </div>
-            <div class="box"> 
+            <div data-aos="fade-up" class="box"> 
                 <div class="box-1">
                     <img src="/img/coffret-grignotage.jpg">
                     <h1 class="info">Indulge Box</h1>
@@ -87,22 +89,22 @@
 
 
                 <!-----BOTTOM SHOP----->
-                <section class="bottom-shop">
+                <section  class="bottom-shop">
                     <div class="zoom"> 
-                    <img src="img/les-collections-coffrets-thematiques-de-chocolats-FB.jpg.pagespeed.ce.wtuLIhebEG.jpg">
-                    <p>Truffles assortment</p>
+                    <img data-aos="fade-down" src="img/les-collections-coffrets-thematiques-de-chocolats-FB.jpg.pagespeed.ce.wtuLIhebEG.jpg">
+                    <p data-aos="fade-left">Truffles assortment</p>
                     <p>36</p>
                     <p> 100.00 usd</p>>
                     </div>
                             <div class="zoom">
-                            <img src="img/les-pralines-dexception-coffret-dassortiment-de-pralines-FB.jpg.pagespeed.ce.Fs6UBclAIc.jpg">
-                            <p>Truffles assortment</p>
+                            <img data-aos="fade-down" src="img/les-pralines-dexception-coffret-dassortiment-de-pralines-FB.jpg.pagespeed.ce.Fs6UBclAIc.jpg">
+                            <p data-aos="fade-left">Truffles assortment</p>
                             <p>36</p>
-                            <p> 100.00 usd</p>>
+                            <p> 100.00 usd</p>
                             </div>
-                            <div class="zoom">
-                                <img src="img/croc-tv-FB.jpg.pagespeed.ce.aiJO8C7rWG.jpg">
-                                <p>Truffles assortment</p>
+                            <div data-aos="fade-down"class="zoom">
+                                <img data-aos="fade-right" src="img/croc-tv-FB.jpg.pagespeed.ce.aiJO8C7rWG.jpg">
+                                <p data-aos="fade-left">Truffles assortment</p>
                                 <p>36</p>
                                 <p> 100.00 usd</p>>
                             </div>
@@ -253,6 +255,14 @@
               <a href=""><i class="fab fa-cc-mastercard" style="font-size:20px;"></i></a>
             </div>  
           </div>
+
+          <!-----AOS LIBRARY AND JAVASCRIPT ------>
+
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({offset:200, duration: 1300,
+    });
+  </script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
         <script src="app.js"></script>
 </body>
